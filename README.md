@@ -47,7 +47,6 @@ Algorithm/
 
 - [백준 온라인 저지](https://www.acmicpc.net/)
 - [Programmers](https://programmers.co.kr/)
-- [LeetCode](https://leetcode.com/)
 - [solved.ac](https://solved.ac/)
 
 ---
