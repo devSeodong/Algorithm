@@ -1,7 +1,6 @@
 # 🧩 Algorithm
 
 이 레포지토리는 다양한 알고리즘 문제 풀이를 정리하고 기록하기 위한 공간입니다.  
-문제를 풀고, 풀이 방식을 정리하고, 코드와 함께 저장합니다.
 
 ---
 - Tistory : https://dongseodong.tistory.com/
@@ -45,6 +44,7 @@ Algorithm/
 ## 👀 참고 사이트
 
 - [백준 온라인 저지](https://www.acmicpc.net/)
+- [SWEA](https://swexpertacademy.com/)
 - [Programmers](https://programmers.co.kr/)
 - [solved.ac](https://solved.ac/)
 
