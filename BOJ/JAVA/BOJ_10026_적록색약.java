@@ -17,6 +17,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(br.readLine());
 		arr = new char[N][N];
+<<<<<<< HEAD
 		
 		for (int i = 0; i < N; i++) {
 			arr[i] = br.readLine().toCharArray();
@@ -29,6 +30,20 @@ public class Main {
 		System.out.println(cnt1+" "+cnt2);
 	}
 	
+=======
+
+		for (int i = 0; i < N; i++) {
+			arr[i] = br.readLine().toCharArray();
+		}
+
+		int cnt1 = solve(false);
+		int cnt2 = solve(true);
+
+
+		System.out.println(cnt1+" "+cnt2);
+	}
+
+>>>>>>> ce513818d269d6e35935c06fb8b361bb29e75994
 	public static int solve(boolean blind) {
 		v = new boolean[N][N];
 		int cnt = 0;
@@ -47,7 +62,11 @@ public class Main {
 		ArrayDeque<int[]> ad = new ArrayDeque<>();
 		ad.add(new int[] {i, j});
 		v[i][j] = true;
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> ce513818d269d6e35935c06fb8b361bb29e75994
 		while(!ad.isEmpty()) {
 			int[] cur = ad.poll();
 			int r = cur[0], c = cur[1];
@@ -55,7 +74,11 @@ public class Main {
 				int nr = r + dr[d];
 				int nc = c + dc[d];
 				if(nr <0|| nr>=N || nc <0 || nc>=N || v[nr][nc]) continue;
+<<<<<<< HEAD
 				
+=======
+
+>>>>>>> ce513818d269d6e35935c06fb8b361bb29e75994
 				if(isOk(arr[r][c], arr[nr][nc], blind)) {
 					v[nr][nc] = true;
 					ad.add(new int[] {nr, nc});
@@ -63,7 +86,11 @@ public class Main {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> ce513818d269d6e35935c06fb8b361bb29e75994
 	public static boolean isOk(char a, char b, boolean blind) {
 		if(a==b) return true;
 		return blind?(a=='R'&& b=='G')||(a=='G' && b=='R'):false;
