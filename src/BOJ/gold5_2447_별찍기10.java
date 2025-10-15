@@ -43,10 +43,7 @@ public class gold5_2447_별찍기10 {
         for(int i=r; i<r+N; i+=size) {
             for(int j=c; j<c+N; j+=size) {
                 cnt++;
-                if(cnt==5)
-                    solve(i, j, size, true);
-                else
-                    solve(i, j, size, false);
+                solve(i, j, size, cnt == 5);
             }
         }
     }
