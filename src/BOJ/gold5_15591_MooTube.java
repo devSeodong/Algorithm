@@ -51,7 +51,7 @@ public class gold5_15591_MooTube {
 	}
 	
 	public static int solve(int k, int v) {
-		boolean[] V = new boolean[N];
+		boolean[] V = new boolean[N+1];
 		Deque<Integer> dq = new ArrayDeque<>();
 		dq.add(v);
 		V[v] = true;
