@@ -1,25 +1,29 @@
 package BOJ;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 
 public class silver3_11478_서로다른문자열의개수 {
 	public static void main(String[] args) throws IOException {
-		// 문자열 S, 서로 다른 부분 문자열의 개수 
-		// S에서 연속된 일부분, 길이가 1보다 크거나 같음 
-		
-		// 입력 : S ( 소문자, 길이 1000 이하 )
-		// 출력 : S의 서로 다른 부분 문자열의 개수 
-		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine();
-		StringBuilder sb;
-		
+	// 문자열 S, 서로 다른 부분 문자열의 개수
+	// S에서 연속된 일부분, 길이가 1보다 크거나 같음
 
-		
+	// 입력 : S ( 소문자, 길이 1000 이하 )
+	// 출력 : S의 서로 다른 부분 문자열의 개수
+
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	String str = br.readLine();
+
+	Set<String> set = new HashSet<>();
+	int n = str.length();
+
+	for (int i=0; i<n; i++) {
+		for (int j=i+1; j<=n; j++) {
+			set.add(str.substring(i, j));
+		}
+	}
+
+	System.out.println(set.size());
 	}
 }
 
@@ -28,46 +32,7 @@ public class silver3_11478_서로다른문자열의개수 {
 // - 지나가는 시영쌤
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //--------------------------------스포일러 방지-----------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Set<String> set = new HashSet<>();
@@ -87,3 +52,7 @@ public class silver3_11478_서로다른문자열의개수 {
 //}
 //
 //System.out.println(cnt);
+
+// --------------------------------- 이게 맞나 -------------------------------------
+
+
